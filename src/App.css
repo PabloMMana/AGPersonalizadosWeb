@@ -116,7 +116,7 @@
   }
 
   a {
-    color: var(--text-h);
+    color: var(red);
     font-size: 16px;
     border-radius: 6px;
     background: var(--social-bg);
@@ -181,4 +181,27 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+/* Configuração da Marca d'Água no Fundo */
+body::before {
+  content: "";
+  position: fixed; /* Mantém a marca d'água fixa na tela ao rolar */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza perfeitamente na tela */
+  width: 60vw; /* Ocupa 60% da largura da tela (ajuste se quiser maior ou menor) */
+  height: 60vh;
+  
+  /* Caminho da sua imagem na pasta assets */
+  background-image: url('./assets/logo.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+  /* O SEGREDO DA MARCA D'ÁGUA: Opacidade super baixa para ficar bem sutil */
+  opacity: 0.04; 
+  
+  z-index: -1; /* Garante que ela fique REALMENTE atrás de todos os textos e botões */
+  pointer-events: none; /* Impede que a imagem interfira nos cliques do usuário */
 }
