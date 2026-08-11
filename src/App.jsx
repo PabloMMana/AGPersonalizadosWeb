@@ -12,22 +12,22 @@ const PRODUTOS = [
     id: 1, 
     title: "Canecas de Porcelana", 
     description: "Canecas personalizadas para presentes, empresas ou eventos com alta qualidade de estampa.", 
-    image: "public/xicara.png",
+    image: "/xicara.png",
     fotosDemonstracao: [
-      "public/xicara.png", // Imagem principal
-      "public/xicara1.png", // Substitua pelos caminhos das suas fotos reais
-      "public/xicara2.png"
+      "/xicara.png", // Imagem principal
+      "/xicara1.png", // Substitua pelos caminhos das suas fotos reais
+      "/xicara2.png"
     ]
   },
   { 
     id: 2, 
     title: "Copos e Taças", 
     description: "Copos long drink e taças personalizadas ideais para festas, aniversários e casamentos.", 
-    image: "public/copo2.png",
+    image: "/copo2.png",
     fotosDemonstracao: [
-      "public/copo2.png",
-      "public/copo3.png",
-      "public/copo3.png"
+      "/copo2.png",
+      "/copo3.png",
+      "/copo3.png"
       
     ]
   },
@@ -37,8 +37,8 @@ const PRODUTOS = [
     description: "Camisetas com tecidos leves, estampas nítidas e duradouras para uniformes ou uso pessoal.", 
     image: "public/camiseta.png",
     fotosDemonstracao: [
-      "public/camiseta.png",
-      "public/camiseta1.png"
+      "/camiseta.png",
+      "/camiseta1.png"
     ]
   }
 ];
