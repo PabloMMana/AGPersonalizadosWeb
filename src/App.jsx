@@ -35,7 +35,7 @@ const PRODUTOS = [
     id: 3, 
     title: "Camisetas Estampadas", 
     description: "Camisetas com tecidos leves, estampas nítidas e duradouras para uniformes ou uso pessoal.", 
-    image: "public/camiseta.png",
+    image: "/camiseta.png",
     fotosDemonstracao: [
       "/camiseta.png",
       "/camiseta1.png"
