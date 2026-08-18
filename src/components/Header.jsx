@@ -20,10 +20,10 @@ export default function Header() {
             alt="Logo AG Personalizados" 
             style={{ width: '42px', height: '42px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #0052cc' }} 
           />
-          <h1 style={{ fontSize: '1.3rem', fontWeight: '700', color: '#1e293b', margin: 0 }}>
-            AG <span style={{ color: '#0052cc' }}>Personalizados</span>
+          <h1 style={{ fontFamily: 'Caveat', fontSize: '2.3rem', fontWeight: '800', color: '#014e24', margin: 0 }}>
+            AG <span style={{ fontSize: '1.3rem',color: '#cc0000'}}>Personalizados</span>
           </h1>
-        </div>
+          </div>
 
         {/* Menu Interativo */}
         <nav>

@@ -110,14 +110,14 @@ export default function App() {
         width: '100%'
       }}>
         <div className="container">
-          <h2 style={{ textAlign: 'center', fontFamily: "'Fredoka', sans-serif", marginBottom: '3rem', fontSize: '2rem' }}> Nosso Catálogo </h2>
+          <h2 style={{ textAlign: 'center', fontFamily: "'Fredoka', sans-serif", marginBottom: '3rem', fontSize: '3rem', color: '#1c0279' }}> Nosso Catálogo </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             {PRODUTOS.map(prod => (
               <ProductCard 
                 key={prod.id} 
                 title={prod.title} 
                 description={prod.description} 
-                image={prod.image} 
+                image={prod.image}                
                 fotosDemonstracao={prod.fotosDemonstracao} /* Alteração: Passando a lista de fotos para o Card */
               />
             ))}

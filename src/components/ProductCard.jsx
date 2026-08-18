@@ -6,7 +6,7 @@ export default function ProductCard({ image, title, description, fotosDemonstrac
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // Estado para abrir/fechar o modal
 
-  const whatsappNumber = "5511999999999"; // Coloque seu número real aqui
+  const whatsappNumber = "5511973117859"; // Coloque seu número real aqui
   const message = encodeURIComponent(`Olá! Gostaria de saber mais sobre o produto personalizado: ${title}`);
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
