@@ -40,6 +40,16 @@ const PRODUTOS = [
       "/camiseta.png",
       "/camiseta1.png"
     ]
+  },
+   { 
+    id: 4, 
+    title: "Caixas, Sacolas e Embalagens para presentes", 
+    description: "Criamos embalagens e sacolas personalizadas em papel,  entregando elegância, autenticidade e um toque especial ", 
+    image: "/Sacola.jpg",
+    fotosDemonstracao: [
+      "/Sacola.jpg",
+      "/Sacola.jpg"
+    ]
   }
 ];
 
