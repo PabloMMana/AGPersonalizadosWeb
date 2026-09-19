@@ -12,22 +12,21 @@ const PRODUTOS = [
     id: 1, 
     title: "Canecas de Porcelana", 
     description: "Canecas personalizadas para presentes, empresas ou eventos com alta qualidade de estampa.", 
-    image: "/xicara.png",
+    image: "/canecas/xicara.png",
     fotosDemonstracao: [
-      "/xicara.png", // Imagem principal
-      "/xicara1.png", // Substitua pelos caminhos das suas fotos reais
-      "/xicara2.png"
-    ]
+      "/canecas/xicara.png", // Imagem principal
+      "/canecas/xicara1.png", // Substitua pelos caminhos das suas fotos reais
+      "/canecas/xicara2.png"]
   },
   { 
     id: 2, 
     title: "Copos e Taças", 
     description: "Copos long drink e taças personalizadas ideais para festas, aniversários e casamentos.", 
-    image: "/copo2.png",
+    image: "/copos/copo2.png",
     fotosDemonstracao: [
-      "/copo2.png",
-      "/copo3.png",
-      "/copo3.png"
+      "/copos/copo2.png",
+      "/copos/copo3.png",
+      "/copos/copo3.png"
       
     ]
   },
@@ -35,20 +34,22 @@ const PRODUTOS = [
     id: 3, 
     title: "Camisetas Estampadas", 
     description: "Camisetas com tecidos leves, estampas nítidas e duradouras para uniformes ou uso pessoal.", 
-    image: "/camiseta.png",
+    image: "/camisetas/camiseta.png",
     fotosDemonstracao: [
-      "/camiseta.png",
-      "/camiseta1.png"
+      "/camisetas/camiseta.png",
+      "/camisetas/camiseta1.png"
     ]
   },
    { 
     id: 4, 
     title: "Caixas, Sacolas e Embalagens para presentes", 
     description: "Criamos embalagens e sacolas personalizadas em papel,  entregando elegância, autenticidade e um toque especial ", 
-    image: "/Sacola.jpg",
+    image: "/sacolas/Sacola.jpg",
     fotosDemonstracao: [
-      "/Sacola.jpg",
-      "/Sacola.jpg"
+      "/sacolas/sacola1.jpeg",
+      "/sacolas/sacola2.jpeg",
+      "/sacolas/sacola3.jpeg",
+      "/sacolas/sacola4.jpeg"
     ]
   }
 ];
@@ -121,8 +122,9 @@ export default function App() {
       }}>
         <div className="container">
           <h2 style={{ textAlign: 'center', fontFamily: "'Fredoka', sans-serif", marginBottom: '3rem', fontSize: '3rem', color: '#1c0279' }}> Nosso Catálogo </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            {PRODUTOS.map(prod => (
+     
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
+             {PRODUTOS.map(prod => (           
               <ProductCard 
                 key={prod.id} 
                 title={prod.title} 
@@ -133,6 +135,8 @@ export default function App() {
             ))}
           </div>
         </div>
+
+       
       </section>
 
       {/* Seção Sobre/Contato */}
@@ -145,7 +149,8 @@ export default function App() {
           <p style={{ color: 'var(--gray)', 
             marginBottom: '2rem'}}>
             Trabalhamos com sublimação e personalização de artigos com total dedicação e cuidado em cada detalhe, garantindo cores vivas e excelente durabilidade para surpreender quem você ama ou promover sua marca.
-          </p>
+           </p>
+           <p> Telefone para contato: (11) 97311-7859</p>
           
           <div id="contato" style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginTop: '2rem' }}>
             <a href="https://www.instagram.com/agpersonalizados_oficial/" target="_blank" rel="noreferrer" style={{ color: 'var(--dark)', fontWeight: 'bold', border: '1px solid var(--dark)', padding: '0.5rem 1rem', borderRadius: '20px', fontSize: '0.9rem' }}>

@@ -161,7 +161,7 @@ export default function ProductCard({ image, title, description, fotosDemonstrac
                   <img 
                     src={foto} 
                     alt={`Amostra ${index}`} 
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                    style={{ width: '100%',maxWidth: '160px', height: '140px', height: '100%', objectFit: 'cover' }} 
                     onError={(e) => {
                       // Caso a imagem de exemplo não exista ainda, coloca um placeholder cinza amigável
                       e.target.src = "https://placehold.co/400x400/e2e8f0/475569?text=AG+Personalizados";
