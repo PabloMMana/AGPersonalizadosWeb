@@ -41,17 +41,17 @@ const PRODUTOS = [
     ]
   },
    { 
-    id: 4, 
-    title: "Caixas, Sacolas e Embalagens para presentes", 
-    description: "Criamos embalagens e sacolas personalizadas em papel,  entregando elegância, autenticidade e um toque especial ", 
-    image: "/sacolas/Sacola.jpg",
-    fotosDemonstracao: [
-      "/sacolas/sacola1.jpeg",
-      "/sacolas/sacola2.jpeg",
-      "/sacolas/sacola3.jpeg",
-      "/sacolas/sacola4.jpeg"
-    ]
-  }
+  id: 4, 
+  title: "Caixas, Sacolas e Embalagens para presentes", 
+  description: "Criamos embalagens e sacolas personalizadas em papel...   Pedido a partir de 10 unidades", 
+  image: "/sacolas/Sacola.jpg",
+  fotosDemonstracao: [
+    { url: "/sacolas/sacola1.jpeg", legenda: "Sacola em branco, offset 170g - Kraft com alça de cordão" },
+    { url: "/sacolas/sacola2.jpeg", legenda: "Sacola personalizada com logo, offset 170g - Kraft com alça de cordão" },
+    { url: "/sacolas/sacola3.jpeg", legenda: "Sacola com logotipo, offset 170g - Kraft e com boca de palhaçinho.  " },
+    { url: "/sacolas/sacola4.jpeg", legenda: "Sacola personalizada com logo, offset 170g - Kraft com alça de cordão" }
+  ]
+}
 ];
 
 export default function App() {

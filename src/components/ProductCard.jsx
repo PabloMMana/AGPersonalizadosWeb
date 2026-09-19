@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-// Importamos o ShoppingCart e adicionamos o X para fechar a galeria
 import { ShoppingCart, X } from 'lucide-react';
 
 export default function ProductCard({ image, title, description, fotosDemonstracao = [] }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para abrir/fechar o modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const whatsappNumber = "5511973117859"; // Coloque seu número real aqui
+  const whatsappNumber = "5511973117859";
   const message = encodeURIComponent(`Olá! Gostaria de saber mais sobre o produto personalizado: ${title}`);
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
@@ -27,7 +26,7 @@ export default function ProductCard({ image, title, description, fotosDemonstrac
           flexDirection: 'column'
         }}
       >
-        {/* Div da Imagem - Agora ao clicar ela ativa o Modal */}
+        {/* Div da Imagem Principal */}
         <div 
           onClick={() => setIsModalOpen(true)}
           style={{ overflow: 'hidden', height: '280px', cursor: 'pointer', position: 'relative' }}
@@ -44,7 +43,6 @@ export default function ProductCard({ image, title, description, fotosDemonstrac
               transition: 'transform 0.3s ease'
             }} 
           />
-          {/* Efeito visual de legenda fluida que avisa o usuário para clicar */}
           <div style={{
             position: 'absolute',
             inset: 0,
@@ -153,22 +151,56 @@ export default function ProductCard({ image, title, description, fotosDemonstrac
             {/* Grid interna das fotos extras */}
             <div style={{ 
               display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-              gap: '1rem' 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', 
+              gap: '1.25rem' 
             }}>
-              {fotosDemonstracao.map((foto, index) => (
-                <div key={index} style={{ borderRadius: '12px', overflow: 'hidden', height: '200px', backgroundColor: '#f8fafc' }}>
-                  <img 
-                    src={foto} 
-                    alt={`Amostra ${index}`} 
-                    style={{ width: '100%',maxWidth: '160px', height: '140px', height: '100%', objectFit: 'cover' }} 
-                    onError={(e) => {
-                      // Caso a imagem de exemplo não exista ainda, coloca um placeholder cinza amigável
-                      e.target.src = "https://placehold.co/400x400/e2e8f0/475569?text=AG+Personalizados";
+              {fotosDemonstracao.map((item, index) => {
+                // Suporta tanto o formato simples (string com o link da imagem) quanto o formato com objeto { url, legenda }
+                const imgUrl = typeof item === 'string' ? item : item.url;
+                const legenda = typeof item === 'object' ? item.legenda : '';
+
+                return (
+                  <div 
+                    key={index} 
+                    style={{ 
+                      borderRadius: '12px', 
+                      overflow: 'hidden', 
+                      backgroundColor: '#f8fafc',
+                      border: '1px solid #e2e8f0',
+                      padding: '0.5rem',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center'
                     }}
-                  />
-                </div>
-              ))}
+                  >
+                    <img 
+                      src={imgUrl} 
+                      alt={legenda || `Amostra ${index}`} 
+                      style={{ 
+                        width: '100%', 
+                        height: '240px', 
+                        objectFit: 'cover',
+                        borderRadius: '8px'
+                      }} 
+                      onError={(e) => {
+                        e.target.src = "https://placehold.co/400x400/e2e8f0/475569?text=AG+Personalizados";
+                      }}
+                    />
+                    {legenda && (
+                      <p style={{ 
+                        marginTop: '0.5rem', 
+                        fontSize: '0.85rem', 
+                        color: '#334155', 
+                        textAlign: 'center',
+                        fontWeight: '500',
+                        lineHeight: '1.2'
+                      }}>
+                        {legenda}
+                      </p>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
