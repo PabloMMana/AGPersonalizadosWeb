@@ -27,8 +27,8 @@ const PRODUTOS = [
       "/copos/copo2.png",
       "/copos/copo3.png",
       "/copos/copo3.png"
-      
     ]
+    
   },
   { 
     id: 3, 
@@ -46,10 +46,11 @@ const PRODUTOS = [
   description: "Criamos embalagens e sacolas personalizadas em papel...   Pedido a partir de 10 unidades", 
   image: "/sacolas/Sacola.jpg",
   fotosDemonstracao: [
-    { url: "/sacolas/sacola1.jpeg", legenda: "Sacola em branco, offset 170g - Kraft com alça de cordão" },
-    { url: "/sacolas/sacola2.jpeg", legenda: "Sacola personalizada com logo, offset 170g - Kraft com alça de cordão" },
-    { url: "/sacolas/sacola3.jpeg", legenda: "Sacola com logotipo, offset 170g - Kraft e com boca de palhaçinho.  " },
-    { url: "/sacolas/sacola4.jpeg", legenda: "Sacola personalizada com logo, offset 170g - Kraft com alça de cordão" }
+    { url: "/sacolas/sacola1.jpeg", legenda: "Sacola em branco, offset 170g - com alça de cordão" },
+    { url: "/sacolas/sacola2.jpeg", legenda: "Sacola personalizada com logo, offset 170g - com alça de cordão" },
+    { url: "/sacolas/sacola3.jpeg", legenda: "Sacola com logotipo, offset 170g -  com boca de palhaçinho.  " },
+    { url: "/sacolas/sacola4.jpeg", legenda: "Sacola personalizada com logo, offset 170g - com alça de cordão" },
+    { url: "/sacolas/sacola5.jpeg", legenda: "Sacola em branco, Kraft 170g -  com alça de cordão" }
   ]
 }
 ];
