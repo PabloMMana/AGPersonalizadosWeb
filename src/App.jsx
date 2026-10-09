@@ -16,7 +16,11 @@ const PRODUTOS = [
     fotosDemonstracao: [
       "/canecas/xicara.png", // Imagem principal
       "/canecas/xicara1.png", // Substitua pelos caminhos das suas fotos reais
-      "/canecas/xicara2.png"]
+      "/canecas/xicara2.png",
+      "/canecas/xicaraPesonalizada.png",
+      "/canecas/Professor.png",
+      "/canecas/Xicaras prersonalizadas.png",
+      "/canecas/Xicarasprofessor.png"]
   },
   { 
     id: 2, 
