@@ -151,11 +151,10 @@ export default function ProductCard({ image, title, description, fotosDemonstrac
             {/* Grid interna das fotos extras */}
             <div style={{ 
               display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', 
               gap: '1.25rem' 
             }}>
               {fotosDemonstracao.map((item, index) => {
-                // Suporta tanto o formato simples (string com o link da imagem) quanto o formato com objeto { url, legenda }
                 const imgUrl = typeof item === 'string' ? item : item.url;
                 const legenda = typeof item === 'object' ? item.legenda : '';
 
@@ -170,7 +169,8 @@ export default function ProductCard({ image, title, description, fotosDemonstrac
                       padding: '0.5rem',
                       display: 'flex',
                       flexDirection: 'column',
-                      alignItems: 'center'
+                      alignItems: 'center',
+                      justifyContent: 'center'
                     }}
                   >
                     <img 
@@ -179,7 +179,8 @@ export default function ProductCard({ image, title, description, fotosDemonstrac
                       style={{ 
                         width: '100%', 
                         height: '240px', 
-                        objectFit: 'cover',
+                        objectFit: 'contain', /* Exibe a imagem completa sem cortar as laterais */
+                        objectPosition: 'center', /* Centraliza a imagem no contentor */
                         borderRadius: '8px'
                       }} 
                       onError={(e) => {
