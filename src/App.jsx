@@ -58,7 +58,7 @@ const PRODUTOS = [
   description: "Possuímos em estoque, 5.000 envelopes sem logo tipo e sem dizeres, para prota entrega. \n Para envelopes com logos e dizeres, solicite orçamento !  ", 
   image: "/envelopes/envelopes.png",
   fotosDemonstracao: [
-    { url: "/envelopes/envelopemesa.png", legenda: "Envelopes sem logo tipo, offset 170g,\nTamanho: 15,5 cm x 9,0 cm. \n\n * Para envelopes com logos e dizerea, solicite orçamento ! *  "},
+    { url: "/envelopes/envelopemesa.png", legenda: "Envelopes sem logo tipo, offset 170g,\nTamanho: 15,5 cm x 9,0 cm. \n\n * Para envelopes com logos e dizeres, solicite orçamento ! *  "},
     
   ]
 }
