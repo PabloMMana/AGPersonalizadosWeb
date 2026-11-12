@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap');
+
+:root {
+  --primary: #25d366; /* Verde WhatsApp para conversão */
+  --accent: #ff477e;  /* Cor vibrante para botões/destaques */
+  --dark: #2d2d2d;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+}
+
+/* AJUSTE PRINCIPAL: Bloqueia a rolagem lateral e ajusta a cor de fundo */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Garante que nenhuma faixa apareça na direita */
+  background-color: #f8f9fa; /* Alterado de rosa para uma cor neutra suave */
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
