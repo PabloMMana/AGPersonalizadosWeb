@@ -144,7 +144,8 @@ export default function App() {
       }}>
         <div className="container">
           <h2 style={{ textAlign: 'center', fontFamily: "'Fredoka', sans-serif", marginBottom: '3rem', fontSize: '3rem', color: '#1c0279' }}> Nosso Catálogo </h2>
-     
+          <h6 style={{ textAlign: 'center', fontFamily: "'Fredoka', sans-serif", marginBottom: '3rem', fontSize: '1rem', color: '#1c0279' }}> Clique na imagem para vizualizar os modeloe: </h6>
+         
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
              {PRODUTOS.map(prod => (           
               <ProductCard 
